@@ -1,3 +1,14 @@
 .header {
-  background: teal;
+  background-color: var(--color-main-900);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 5px 20px;
 }

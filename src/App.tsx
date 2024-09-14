@@ -1,5 +1,5 @@
 import { IndexPage } from './pages';
-import { Layout } from './components/Layout';
+import { Layout } from './components';
 
 const App = () => {
   return (

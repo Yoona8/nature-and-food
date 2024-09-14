@@ -1,5 +1,4 @@
-import { Header } from '../Header';
-import { Footer } from '../Footer/Footer.tsx';
+import { Footer, Header } from '..';
 
 export const Layout = ({ children }) => {
   return (

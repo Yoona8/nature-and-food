@@ -1,0 +1,17 @@
+.hero {
+  margin-top: -28px;
+  padding: 70px 20px 40px;
+  color: var(--color-text-contrast);
+  text-align: center;
+  background-color: var(--color-main-900);
+  background-image: url('./hero-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero svg {
+  display: block;
+  width: 46px;
+  height: 50px;
+  margin: 0 auto 12px;
+}

@@ -1,5 +1,7 @@
+import { Landing } from '../components';
+
 export const IndexPage = () => {
   return (
-    <i>Index</i>
+    <Landing />
   );
 };

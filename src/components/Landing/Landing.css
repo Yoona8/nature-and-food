@@ -1,4 +1,6 @@
 .hero {
+  position: relative;
+  z-index: 1;
   margin-top: -28px;
   padding: 70px 20px 40px;
   color: var(--color-text-contrast);
@@ -7,6 +9,8 @@
   background-image: url('./hero-bg.jpg');
   background-position: center center;
   background-repeat: no-repeat;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .hero svg {
@@ -14,4 +18,14 @@
   width: 46px;
   height: 50px;
   margin: 0 auto 12px;
+}
+
+.about {
+  box-sizing: border-box;
+  max-width: 950px;
+  margin: -28px auto 0;
+  padding: 48px 35px 20px;
+  background-color: var(--color-gray-200);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }

@@ -9,6 +9,7 @@
   background-image: url('./hero-bg.jpg');
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
@@ -28,4 +29,19 @@
   background-color: var(--color-gray-200);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+
+.recipes {
+  padding: 30px 20px 25px;
+}
+
+.recipes__cards {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recipes__cards li:not(:last-of-type) {
+  margin-bottom: 25px;
 }

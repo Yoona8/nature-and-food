@@ -1,0 +1,16 @@
+.recipe {
+  border-radius: 25px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 5%);
+}
+
+.recipe__img {
+  display: block;
+  height: 280px;
+  object-fit: cover;
+}
+
+.recipe__content-wrapper {
+  padding: 14px 20px 20px;
+}

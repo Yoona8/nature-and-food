@@ -1,5 +1,7 @@
 import './Landing.css';
 import { IconLeaves } from '../../icons';
+import { RecipeCard } from '../RecipeCard/RecipeCard.tsx';
+import { mockedRecipes } from '../../__test__/__mocks__/recipes.mock.ts';
 
 export const Landing = () => {
   return (
@@ -15,6 +17,12 @@ export const Landing = () => {
           Raise your hand if you love falafel! I’ve gone back into the archives to highlight my all-time favorite
           homemade falafel recipe. Making falafel at home can be tricky...
         </p>
+      </section>
+      <section className="recipes">
+        <h2 className="visually-hidden">Featured recipes</h2>
+        <ul className="recipes__cards">
+          {mockedRecipes.map(recipe => <li key={recipe.id}><RecipeCard {...recipe} /></li>)}
+        </ul>
       </section>
     </>
   );

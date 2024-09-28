@@ -26,6 +26,19 @@ body {
   background-color: var(--color-gray-300);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-title {
   margin: 0 0 20px;
   font-size: 26px;
@@ -66,4 +79,9 @@ p {
 
 p:not(:last-of-type) {
   margin-bottom: 8px;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }

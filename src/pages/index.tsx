@@ -1,7 +1,7 @@
-import { Landing } from '../components';
+import { Recipes } from '../components';
 
 export const IndexPage = () => {
   return (
-    <Landing />
+    <Recipes />
   );
 };

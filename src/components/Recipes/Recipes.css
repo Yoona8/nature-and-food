@@ -16,19 +16,9 @@
 
 .hero svg {
   display: block;
-  width: 46px;
-  height: 50px;
-  margin: 0 auto 12px;
-}
-
-.about {
-  box-sizing: border-box;
-  max-width: 950px;
-  margin: -28px auto 0;
-  padding: 48px 35px 20px;
-  background-color: var(--color-gray-200);
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  width: 36px;
+  height: auto;
+  margin: 0 auto 5px;
 }
 
 .recipes {
@@ -36,12 +26,30 @@
 }
 
 .recipes__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
-  margin: 0;
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 
-.recipes__cards li:not(:last-of-type) {
-  margin-bottom: 25px;
+@media (min-width: 1000px) {
+  .recipes__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+
+  .recipes__cards li:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+
+  .recipes__cards li:nth-of-type(12n + 2),
+  .recipes__cards li:nth-of-type(12n + 7) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
 }
